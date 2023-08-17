@@ -25,15 +25,15 @@
 
     <main>
       <section>
-        <div class="bg-sky-300 w-9/12 h-96 mx-auto mt-8 rounded text-center">
+        <div class="bg-sky-300 w-9/12 h-[812px] mx-auto mt-8 rounded text-center">
           <div>
-            <h3 class="text-2xl font-semibold p-1">My Text Editor</h3>
+            <h3 class="text-2xl font-semibold p-1 lg:p-3 py-3">My Text Editor</h3>
           </div>
           <div
             class="w-9/12 h-fit py-2 bg-sky-200 border-2 border-black mx-auto"
           >
             <div class="px-4 py-2 flex justify-between">
-              <div class="grid grid-cols-4 gap-3">
+              <div class="grid grid-cols-4 gap-3 px-8">
                 <span
                   id="btn-bold"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -50,7 +50,7 @@
                   ><i class="fa-solid fa-underline"></i
                 ></span>
               </div>
-              <div class="grid grid-cols-4 gap-4">
+              <div class="grid grid-cols-4 gap-4 px-8">
                 <span
                   id="btn-align-left"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -72,7 +72,7 @@
                   ><i class="fa-solid fa-align-justify"></i
                 ></span>
               </div>
-              <div class="grid grid-cols-3 gap-3">
+              <div class="grid grid-cols-3 gap-3 px-8">
                 <span
                   id="btn-to-upper-case"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -93,7 +93,7 @@
               <textarea
                 name=""
                 id="text-area"
-                class="ck p-2 max-w-2xl focus:outline-none"
+                class="ck p-4 w-[50vw] h-[65vh] focus:outline-none"
                 cols="91"
                 rows="10"
               ></textarea>
@@ -101,6 +101,9 @@
           </div>
         </div>
       </section>
+
+
+      <div class="h-[100vh]"></div>
     </main>
     <script src="./js/ms-word-lite.js"></script>
   </body>
