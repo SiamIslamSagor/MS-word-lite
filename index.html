@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/85858dde4b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* .ck {
+        text-align: justify;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2>MY TEXT EDITOR PROJECT</h2>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="bg-sky-300 w-9/12 h-96 mx-auto mt-8 rounded text-center">
+          <div>
+            <h3 class="text-2xl font-semibold p-1">My Text Editor</h3>
+          </div>
+          <div
+            class="w-9/12 h-fit py-2 bg-sky-200 border-2 border-black mx-auto"
+          >
+            <div class="px-4 py-2 flex justify-between">
+              <div class="grid grid-cols-4 gap-3">
+                <span
+                  id="btn-bold"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-bold"></i
+                ></span>
+                <span
+                  id="btn-italic"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-italic"></i
+                ></span>
+                <span
+                  id="btn-underline"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-underline"></i
+                ></span>
+              </div>
+              <div class="grid grid-cols-4 gap-4">
+                <span
+                  id="btn-align-left"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-align-left"></i
+                ></span>
+                <span
+                  id="btn-align-center"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-align-center"></i
+                ></span>
+                <span
+                  id="btn-align-right"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-align-right"></i
+                ></span>
+                <span
+                  id="btn-align-justify"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  ><i class="fa-solid fa-align-justify"></i
+                ></span>
+              </div>
+              <div class="grid grid-cols-3 gap-3">
+                <span
+                  id="btn-to-upper-case"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  >aA</span
+                >
+                <span>
+                  <input
+                    class="w-10"
+                    type="color"
+                    id="favcolor"
+                    name="favcolor"
+                    value="#ff0000"
+                  />
+                </span>
+              </div>
+            </div>
+            <div>
+              <textarea
+                name=""
+                id="text-area"
+                class="ck p-2 max-w-2xl focus:outline-none"
+                cols="91"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/ms-word-lite.js"></script>
+  </body>
+</html>
