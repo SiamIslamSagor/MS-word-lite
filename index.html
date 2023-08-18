@@ -63,7 +63,7 @@
                 ></span>
                 <span
                   id="btn-align-right"
-                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
                   ><i class="fa-solid fa-align-right"></i
                 ></span>
                 <span
@@ -73,6 +73,15 @@
                 ></span>
               </div>
               <div class="grid grid-cols-3 gap-3 px-8">
+                <span>
+                  <input 
+                  id="change-font-size"
+                  type="number" 
+                  value="16" 
+                  onchange="colorStyle('change-font-size')"
+                  class="cursor-pointer p-1 w-12 rounded-lg bg-blue-300 border-2 outline-white"
+                  />
+                </span>
                 <span
                   id="btn-to-upper-case"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -83,6 +92,7 @@
                     class="w-10"
                     type="color"
                     id="favcolor"
+                    onchange="colorStyle('favcolor')"
                     name="favcolor"
                     value="#ff0000"
                   />
