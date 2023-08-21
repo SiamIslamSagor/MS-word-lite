@@ -4,36 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Editor</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/85858dde4b.js"
       crossorigin="anonymous"
     ></script>
 
-    <style>
-      /* .ck {
-        text-align: justify;
-      } */
-    </style>
   </head>
   <body>
     <header>
       <div>
-        <h2>MY TEXT EDITOR PROJECT</h2>
+        <h2>MY TEXT EDITOR PROJECT:</h2>
       </div>
     </header>
 
     <main>
       <section>
-        <div class="bg-sky-300 w-9/12 h-[812px] mx-auto mt-8 rounded text-center">
+        <div
+          class="bg-sky-300 w-9/12 h-[812px] mx-auto mt-8 rounded text-center"
+        >
           <div>
-            <h3 class="text-2xl font-semibold p-1 lg:p-3 py-3">My Text Editor</h3>
+            <h3 class="text-2xl font-semibold p-1 lg:p-3 py-3">
+              My Text Editor
+            </h3>
           </div>
           <div
             class="w-9/12 h-fit py-2 bg-sky-200 border-2 border-black mx-auto"
           >
-            <div class="px-4 py-2 flex justify-between">
-              <div class="grid grid-cols-4 gap-3 px-8">
+            <div class=" py-2 flex justify-between md:px-4">
+              <div class="flex flex-col lg:grid grid-cols-4 gap-3 lg:px-8">
                 <span
                   id="btn-bold"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -50,7 +55,7 @@
                   ><i class="fa-solid fa-underline"></i
                 ></span>
               </div>
-              <div class="grid grid-cols-4 gap-4 px-8">
+              <div class="grid grid-cols-4 gap-4 max-lg:mt-10 lg:px-8">
                 <span
                   id="btn-align-left"
                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
@@ -63,7 +68,7 @@
                 ></span>
                 <span
                   id="btn-align-right"
-                   class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
+                  class="hover:bg-sky-500 cursor-pointer rounded-sm p-1"
                   ><i class="fa-solid fa-align-right"></i
                 ></span>
                 <span
@@ -72,14 +77,14 @@
                   ><i class="fa-solid fa-align-justify"></i
                 ></span>
               </div>
-              <div class="grid grid-cols-3 gap-3 px-8">
+              <div class="flex flex-col lg:grid grid-cols-3 gap-3 lg:px-8">
                 <span>
-                  <input 
-                  id="change-font-size"
-                  type="number" 
-                  value="16" 
-                  onchange="colorStyle('change-font-size')"
-                  class="cursor-pointer p-1 w-12 rounded-lg bg-blue-300 border-2 outline-white"
+                  <input
+                    id="change-font-size"
+                    type="number"
+                    value="16"
+                    onchange="colorStyle('change-font-size')"
+                    class="cursor-pointer p-1 w-12 rounded-lg bg-blue-300 border-2 outline-white"
                   />
                 </span>
                 <span
